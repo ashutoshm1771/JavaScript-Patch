@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let counter=0;
+        function count(){
+            counter++;
+            if(counter % 10 == 0){
+                alert("Mod 10, start from 0.");
+                counter=0;
+            }
+            document.querySelector('h1').innerHTML = counter ;
+            
+        }
+    </script>
+</head>
+<body>
+    <h1>0</h1>
+    <button onclick="count()">Count!</button>
+</body>
+</html>
