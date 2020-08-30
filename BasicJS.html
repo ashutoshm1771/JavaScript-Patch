@@ -9,11 +9,17 @@
                 document.querySelector('h1').innerHTML='Woah!';
             }
             function flip(){
-                if(document.querySelector('h1').innerHTML === 'Hello!'){
-                    document.querySelector('h1').innerHTML = 'GoodBye!';
+                const heading=document.querySelector('h1');
+                if(heading.innerHTML === 'Hello!'){
+                    heading.innerHTML = 'GoodBye!';
                 } else {
-                    document.querySelector('h1').innerHTML = 'Hello!';
+                    heading.innerHTML = 'Hello!';
                 } 
+                // if(document.querySelector('h1').innerHTML === 'Hello!'){
+                //     document.querySelector('h1').innerHTML = 'GoodBye!';
+                // } else {
+                //     document.querySelector('h1').innerHTML = 'Hello!';
+                // } 
             }
         </script>
     </head>
