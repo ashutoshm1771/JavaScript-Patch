@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Hello, JS!
+        </title>
+        <script>
+            function change(){
+                alert("You Clicked!");
+                //document.querySelector('h1').innerHTML='Woah!');
+            }
+            function flip(){
+                if(document.querySelector('h1').innerHTML === 'Hello!'){
+                    document.querySelector('h1').innerHTML = 'GoodBye!');
+                } else {
+                    document.querySelector('h1').innerHTML = 'Hello!');
+                } 
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Hello!</h1>
+        <button onclick="change()">Change!</button>
+        <button onclick="flip()">Flip!</button>
+    </body>
+</html>
